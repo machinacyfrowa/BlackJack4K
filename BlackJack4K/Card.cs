@@ -11,7 +11,7 @@ namespace BlackJack4K
     {
         //wartość karty (2,3,4,J,Q,K,A)
         string value;
-        //kolor karty (kier, karo, trefl, pik)
+        //kolor karty (H = kier, D = karo, C = trefl, S = pik)
         string color;
 
         //konstruktor karty

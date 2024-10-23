@@ -17,7 +17,21 @@ namespace BlackJack4K
         }
         public int CountPoints()
         {
-
+            int points = 0;
+            int aces = 0;
+            foreach (Card card in cards)
+            {
+                int value = card.GetValue();
+                if (value == 11)
+                    aces++;
+                points += value;
+            }
+            while (points > 21 && aces > 0)
+            {
+                points -= 10;
+                aces--;
+            }
+            return points;
         }
     }
 
