@@ -2,12 +2,46 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BlackJack4K.MainPage">
-
-    <ScrollView>
+    
+    <ScrollView
+        BackgroundColor="Green">
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            
+            <HorizontalStackLayout 
+                x:Name="DealerHand">
+                <Label 
+                    x:Name="DealerScore"
+                    Text="Krupier: 0"
+                    FontSize="Large"
+                    HorizontalOptions="CenterAndExpand"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <VerticalStackLayout 
+                    x:Name="Player3Hand">
+                    <Label 
+                        x:Name="Player3Score"
+                        Text="Gracz3: 0"
+                        FontSize="Large"
+                        HorizontalOptions="CenterAndExpand"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout 
+                    x:Name="Player1Hand">
+                    <Label 
+                        x:Name="Player1Score"
+                        Text="Gracz1: 0"
+                        FontSize="Large"
+                        HorizontalOptions="CenterAndExpand"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout 
+                x:Name="Player2Hand">
+                <Label 
+                    x:Name="Player2Score"
+                    Text="Gracz2: 0"
+                    FontSize="Large"
+                    HorizontalOptions="CenterAndExpand"/>
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

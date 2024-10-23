@@ -8,7 +8,7 @@
     Title="BlackJack4K">
 
     <ShellContent
-        Title="Home"
+        Title="BlackJack"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
